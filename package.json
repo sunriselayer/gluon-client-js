@@ -1,0 +1,19 @@
+{
+  "name": "gluon-types",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunriselayer/gluon-types-js.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sunriselayer/gluon-types-js/issues"
+  },
+  "homepage": "https://github.com/sunriselayer/gluon-types-js#readme",
+  "description": ""
+}
