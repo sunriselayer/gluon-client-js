@@ -8,8 +8,8 @@
     "dist"
   ],
   "exports": {
-    "contract": "./dist/gluon/contract/index.js",
-    "customauth": "./dist/gluon/customauth/index.js"
+    "./contract": "./dist/gluon/contract/index.js",
+    "./customauth": "./dist/gluon/customauth/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
