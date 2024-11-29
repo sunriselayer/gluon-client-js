@@ -15,5 +15,13 @@
     "url": "https://github.com/sunriselayer/gluon-types-js/issues"
   },
   "homepage": "https://github.com/sunriselayer/gluon-types-js#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@bufbuild/buf": "^1.47.2",
+    "@bufbuild/protoc-gen-es": "^2.2.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.2.2"
+  }
 }
