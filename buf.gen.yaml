@@ -12,3 +12,12 @@ inputs:
   - git_repo: https://github.com/sunriselayer/gluon.git
     branch: main
     subdir: proto
+    paths:
+      - gluon/contract/order.proto
+      - gluon/contract/query.proto
+      - gluon/contract/tx.proto
+      - gluon/customauth/operator
+      - gluon/customauth/pairing
+      - gluon/customauth/query.proto
+      - gluon/customauth/tx.proto
+
