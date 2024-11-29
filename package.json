@@ -1,11 +1,15 @@
 {
-  "name": "gluon-types",
+  "name": "@sunriselayer/gluon-types",
   "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist"
   ],
   "exports": {
-    ".": "./dist/index.js"
+    "contract": "./dist/gluon/contract/index.js",
+    "customauth": "./dist/gluon/customauth/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
