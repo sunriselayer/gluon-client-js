@@ -8,6 +8,7 @@
     ".": "./dist/index.js"
   },
   "scripts": {
+    "gen-proto": "buf generate",
     "build": "tsc --build --clean && tsc --build"
   },
   "repository": {

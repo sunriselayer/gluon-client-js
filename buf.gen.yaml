@@ -1,0 +1,14 @@
+version: v2
+managed:
+  enabled: true
+
+plugins:
+  - local: protoc-gen-es
+    opt: target=ts
+    out: src
+    include_imports: true
+
+inputs:
+  - git_repo: https://github.com/sunriselayer/gluon.git
+    branch: main
+    subdir: proto
