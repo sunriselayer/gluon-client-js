@@ -1,3 +1,4 @@
+export * from "./base_order_pb";
 export * from "./order_pb";
 export * from "./params_pb";
 export * from "./query_pb";

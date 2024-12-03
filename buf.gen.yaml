@@ -13,9 +13,10 @@ inputs:
     branch: main
     subdir: proto
     paths:
-      - gluon/contract/order.proto
-      - gluon/contract/query.proto
-      - gluon/contract/tx.proto
+      - gluon/order/base_order.proto
+      - gluon/order/order.proto
+      - gluon/order/query.proto
+      - gluon/order/tx.proto
       - gluon/customauth/operator
       - gluon/customauth/pairing
       - gluon/customauth/query.proto
