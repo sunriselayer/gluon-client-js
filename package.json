@@ -9,7 +9,9 @@
   ],
   "exports": {
     "./customauth": "./dist/gluon/customauth/index.js",
-    "./order": "./dist/gluon/order/index.js"
+    "./order": "./dist/gluon/order/index.js",
+    "./perp": "./dist/gluon/perp/index.js",
+    "./spot": "./dist/gluon/spot/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
