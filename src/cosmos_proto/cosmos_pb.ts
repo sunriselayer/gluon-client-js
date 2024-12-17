@@ -4,7 +4,7 @@
 
 import type { GenEnum, GenExtension, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { enumDesc, extDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
-import type { FieldOptions, FileOptions, MessageOptions, MethodOptions } from "@bufbuild/protobuf/wkt";
+import type { FieldOptions, FileOptions, MessageOptions } from "@bufbuild/protobuf/wkt";
 import { file_google_protobuf_descriptor } from "@bufbuild/protobuf/wkt";
 import type { Message } from "@bufbuild/protobuf";
 
@@ -12,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file cosmos_proto/cosmos.proto.
  */
 export const file_cosmos_proto_cosmos: GenFile = /*@__PURE__*/
-  fileDesc("Chljb3Ntb3NfcHJvdG8vY29zbW9zLnByb3RvEgxjb3Ntb3NfcHJvdG8iOAoTSW50ZXJmYWNlRGVzY3JpcHRvchIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJImMKEFNjYWxhckRlc2NyaXB0b3ISDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRIsCgpmaWVsZF90eXBlGAMgAygOMhguY29zbW9zX3Byb3RvLlNjYWxhclR5cGUqWAoKU2NhbGFyVHlwZRIbChdTQ0FMQVJfVFlQRV9VTlNQRUNJRklFRBAAEhYKElNDQUxBUl9UWVBFX1NUUklORxABEhUKEVNDQUxBUl9UWVBFX0JZVEVTEAI6SAoPbWV0aG9kX2FkZGVkX2luEh4uZ29vZ2xlLnByb3RvYnVmLk1ldGhvZE9wdGlvbnMYydYFIAEoCVINbWV0aG9kQWRkZWRJbjpUChRpbXBsZW1lbnRzX2ludGVyZmFjZRIfLmdvb2dsZS5wcm90b2J1Zi5NZXNzYWdlT3B0aW9ucxjJ1gUgAygJUhNpbXBsZW1lbnRzSW50ZXJmYWNlOksKEG1lc3NhZ2VfYWRkZWRfaW4SHy5nb29nbGUucHJvdG9idWYuTWVzc2FnZU9wdGlvbnMYytYFIAEoCVIObWVzc2FnZUFkZGVkSW46TAoRYWNjZXB0c19pbnRlcmZhY2USHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGMnWBSABKAlSEGFjY2VwdHNJbnRlcmZhY2U6NwoGc2NhbGFyEh0uZ29vZ2xlLnByb3RvYnVmLkZpZWxkT3B0aW9ucxjK1gUgASgJUgZzY2FsYXI6RQoOZmllbGRfYWRkZWRfaW4SHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGMvWBSABKAlSDGZpZWxkQWRkZWRJbjpuChFkZWNsYXJlX2ludGVyZmFjZRIcLmdvb2dsZS5wcm90b2J1Zi5GaWxlT3B0aW9ucxi9szAgAygLMiEuY29zbW9zX3Byb3RvLkludGVyZmFjZURlc2NyaXB0b3JSEGRlY2xhcmVJbnRlcmZhY2U6ZQoOZGVjbGFyZV9zY2FsYXISHC5nb29nbGUucHJvdG9idWYuRmlsZU9wdGlvbnMYvrMwIAMoCzIeLmNvc21vc19wcm90by5TY2FsYXJEZXNjcmlwdG9yUg1kZWNsYXJlU2NhbGFyOkIKDWZpbGVfYWRkZWRfaW4SHC5nb29nbGUucHJvdG9idWYuRmlsZU9wdGlvbnMYv7MwIAEoCVILZmlsZUFkZGVkSW5CmAEKEGNvbS5jb3Ntb3NfcHJvdG9CC0Nvc21vc1Byb3RvUAFaK2dpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1wcm90bztjb3Ntb3NfcHJvdG+iAgNDWFiqAgtDb3Ntb3NQcm90b8oCC0Nvc21vc1Byb3Rv4gIXQ29zbW9zUHJvdG9cR1BCTWV0YWRhdGHqAgtDb3Ntb3NQcm90b2IGcHJvdG8z", [file_google_protobuf_descriptor]);
+  fileDesc("Chljb3Ntb3NfcHJvdG8vY29zbW9zLnByb3RvEgxjb3Ntb3NfcHJvdG8iOAoTSW50ZXJmYWNlRGVzY3JpcHRvchIMCgRuYW1lGAEgASgJEhMKC2Rlc2NyaXB0aW9uGAIgASgJImMKEFNjYWxhckRlc2NyaXB0b3ISDAoEbmFtZRgBIAEoCRITCgtkZXNjcmlwdGlvbhgCIAEoCRIsCgpmaWVsZF90eXBlGAMgAygOMhguY29zbW9zX3Byb3RvLlNjYWxhclR5cGUqWAoKU2NhbGFyVHlwZRIbChdTQ0FMQVJfVFlQRV9VTlNQRUNJRklFRBAAEhYKElNDQUxBUl9UWVBFX1NUUklORxABEhUKEVNDQUxBUl9UWVBFX0JZVEVTEAI6VAoUaW1wbGVtZW50c19pbnRlcmZhY2USHy5nb29nbGUucHJvdG9idWYuTWVzc2FnZU9wdGlvbnMYydYFIAMoCVITaW1wbGVtZW50c0ludGVyZmFjZTpMChFhY2NlcHRzX2ludGVyZmFjZRIdLmdvb2dsZS5wcm90b2J1Zi5GaWVsZE9wdGlvbnMYydYFIAEoCVIQYWNjZXB0c0ludGVyZmFjZTo3CgZzY2FsYXISHS5nb29nbGUucHJvdG9idWYuRmllbGRPcHRpb25zGMrWBSABKAlSBnNjYWxhcjpuChFkZWNsYXJlX2ludGVyZmFjZRIcLmdvb2dsZS5wcm90b2J1Zi5GaWxlT3B0aW9ucxi9szAgAygLMiEuY29zbW9zX3Byb3RvLkludGVyZmFjZURlc2NyaXB0b3JSEGRlY2xhcmVJbnRlcmZhY2U6ZQoOZGVjbGFyZV9zY2FsYXISHC5nb29nbGUucHJvdG9idWYuRmlsZU9wdGlvbnMYvrMwIAMoCzIeLmNvc21vc19wcm90by5TY2FsYXJEZXNjcmlwdG9yUg1kZWNsYXJlU2NhbGFyQpgBChBjb20uY29zbW9zX3Byb3RvQgtDb3Ntb3NQcm90b1ABWitnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3MtcHJvdG87Y29zbW9zX3Byb3RvogIDQ1hYqgILQ29zbW9zUHJvdG/KAgtDb3Ntb3NQcm90b+ICF0Nvc21vc1Byb3RvXEdQQk1ldGFkYXRh6gILQ29zbW9zUHJvdG9iBnByb3RvMw", [file_google_protobuf_descriptor]);
 
 /**
  * InterfaceDescriptor describes an interface type to be used with
@@ -123,14 +123,6 @@ export const ScalarTypeSchema: GenEnum<ScalarType> = /*@__PURE__*/
   enumDesc(file_cosmos_proto_cosmos, 0);
 
 /**
- * method_added_in is used to indicate from which version the method was added.
- *
- * @generated from extension: string method_added_in = 93001;
- */
-export const method_added_in: GenExtension<MethodOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 0);
-
-/**
  * implements_interface is used to indicate the type name of the interface
  * that a message implements so that it can be used in google.protobuf.Any
  * fields that accept that interface. A message can implement multiple
@@ -140,15 +132,7 @@ export const method_added_in: GenExtension<MethodOptions, string> = /*@__PURE__*
  * @generated from extension: repeated string implements_interface = 93001;
  */
 export const implements_interface: GenExtension<MessageOptions, string[]> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 1);
-
-/**
- * message_added_in is used to indicate from which version the message was added.
- *
- * @generated from extension: string message_added_in = 93002;
- */
-export const message_added_in: GenExtension<MessageOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 2);
+  extDesc(file_cosmos_proto_cosmos, 0);
 
 /**
  * accepts_interface is used to annotate that a google.protobuf.Any
@@ -158,7 +142,7 @@ export const message_added_in: GenExtension<MessageOptions, string> = /*@__PURE_
  * @generated from extension: string accepts_interface = 93001;
  */
 export const accepts_interface: GenExtension<FieldOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 3);
+  extDesc(file_cosmos_proto_cosmos, 1);
 
 /**
  * scalar is used to indicate that this field follows the formatting defined
@@ -169,15 +153,7 @@ export const accepts_interface: GenExtension<FieldOptions, string> = /*@__PURE__
  * @generated from extension: string scalar = 93002;
  */
 export const scalar: GenExtension<FieldOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 4);
-
-/**
- * field_added_in is used to indicate from which version the field was added.
- *
- * @generated from extension: string field_added_in = 93003;
- */
-export const field_added_in: GenExtension<FieldOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 5);
+  extDesc(file_cosmos_proto_cosmos, 2);
 
 /**
  * declare_interface declares an interface type to be used with
@@ -190,7 +166,7 @@ export const field_added_in: GenExtension<FieldOptions, string> = /*@__PURE__*/
  * @generated from extension: repeated cosmos_proto.InterfaceDescriptor declare_interface = 793021;
  */
 export const declare_interface: GenExtension<FileOptions, InterfaceDescriptor[]> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 6);
+  extDesc(file_cosmos_proto_cosmos, 3);
 
 /**
  * declare_scalar declares a scalar type to be used with
@@ -203,13 +179,5 @@ export const declare_interface: GenExtension<FileOptions, InterfaceDescriptor[]>
  * @generated from extension: repeated cosmos_proto.ScalarDescriptor declare_scalar = 793022;
  */
 export const declare_scalar: GenExtension<FileOptions, ScalarDescriptor[]> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 7);
-
-/**
- * file_added_in is used to indicate from which the version the file was added.
- *
- * @generated from extension: string file_added_in = 793023;
- */
-export const file_added_in: GenExtension<FileOptions, string> = /*@__PURE__*/
-  extDesc(file_cosmos_proto_cosmos, 8);
+  extDesc(file_cosmos_proto_cosmos, 4);
 

@@ -4,6 +4,7 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
+import { file_cosmos_proto_cosmos } from "../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../gogoproto/gogo_pb";
 import type { Any, Timestamp } from "@bufbuild/protobuf/wkt";
 import { file_google_protobuf_any, file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
@@ -13,7 +14,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/customauth/pairing.proto.
  */
 export const file_gluon_customauth_pairing: GenFile = /*@__PURE__*/
-  fileDesc("Ch5nbHVvbi9jdXN0b21hdXRoL3BhaXJpbmcucHJvdG8SEGdsdW9uLmN1c3RvbWF1dGgikAEKB1BhaXJpbmcSCgoCaWQYASABKAQSDwoHYWRkcmVzcxgCIAEoCRIuCgpwdWJsaWNfa2V5GAMgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIEyN4fABI4CgpjcmVhdGVkX2F0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIyN4fAJDfHwFCnwEKFGNvbS5nbHVvbi5jdXN0b21hdXRoQgxQYWlyaW5nUHJvdG9QAVoYZ2x1b24veC9jdXN0b21hdXRoL3R5cGVzogIDR0NYqgIQR2x1b24uQ3VzdG9tYXV0aMoCEEdsdW9uXEN1c3RvbWF1dGjiAhxHbHVvblxDdXN0b21hdXRoXEdQQk1ldGFkYXRh6gIRR2x1b246OkN1c3RvbWF1dGhiBnByb3RvMw", [file_gogoproto_gogo, file_google_protobuf_any, file_google_protobuf_timestamp]);
+  fileDesc("Ch5nbHVvbi9jdXN0b21hdXRoL3BhaXJpbmcucHJvdG8SEGdsdW9uLmN1c3RvbWF1dGgiqwEKB1BhaXJpbmcSJwoFb3duZXIYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxINCgVpbmRleBgCIAEoCRIuCgpwdWJsaWNfa2V5GAMgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIEyN4fABI4CgpjcmVhdGVkX2F0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIyN4fAJDfHwFCnwEKFGNvbS5nbHVvbi5jdXN0b21hdXRoQgxQYWlyaW5nUHJvdG9QAVoYZ2x1b24veC9jdXN0b21hdXRoL3R5cGVzogIDR0NYqgIQR2x1b24uQ3VzdG9tYXV0aMoCEEdsdW9uXEN1c3RvbWF1dGjiAhxHbHVvblxDdXN0b21hdXRoXEdQQk1ldGFkYXRh6gIRR2x1b246OkN1c3RvbWF1dGhiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_any, file_google_protobuf_timestamp]);
 
 /**
  * Pairing
@@ -22,14 +23,16 @@ export const file_gluon_customauth_pairing: GenFile = /*@__PURE__*/
  */
 export type Pairing = Message<"gluon.customauth.Pairing"> & {
   /**
-   * @generated from field: uint64 id = 1;
+   * @generated from field: string owner = 1;
    */
-  id: bigint;
+  owner: string;
 
   /**
-   * @generated from field: string address = 2;
+   * Hex string of 20 bytes of output of Address() method of PublicKey
+   *
+   * @generated from field: string index = 2;
    */
-  address: string;
+  index: string;
 
   /**
    * @generated from field: google.protobuf.Any public_key = 3;

@@ -13,6 +13,7 @@ inputs:
     branch: main
     subdir: proto
     paths:
+      - cosmos/tx/v1beta1/tx.proto
       - gluon/customauth/operator
       - gluon/customauth/pairing
       - gluon/customauth/query.proto
@@ -27,3 +28,8 @@ inputs:
       - gluon/spot/order.proto
       - gluon/spot/query.proto
       - gluon/spot/tx.proto
+  - git_repo: https://github.com/cosmos/cosmos-sdk.git
+    branch: v0.50.10
+    subdir: proto
+    paths:
+      - cosmos/tx/v1beta1/tx.proto

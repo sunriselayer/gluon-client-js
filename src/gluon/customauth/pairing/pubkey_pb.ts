@@ -10,7 +10,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/customauth/pairing/pubkey.proto.
  */
 export const file_gluon_customauth_pairing_pubkey: GenFile = /*@__PURE__*/
-  fileDesc("CiVnbHVvbi9jdXN0b21hdXRoL3BhaXJpbmcvcHVia2V5LnByb3RvEhhnbHVvbi5jdXN0b21hdXRoLnBhaXJpbmciKgoGUHViS2V5EgwKBHVzZXIYASABKAwSEgoKcGFpcmluZ19pZBgCIAEoBELPAQocY29tLmdsdW9uLmN1c3RvbWF1dGgucGFpcmluZ0ILUHVia2V5UHJvdG9QAVogZ2x1b24veC9jdXN0b21hdXRoL3R5cGVzL3BhaXJpbmeiAgNHQ1CqAhhHbHVvbi5DdXN0b21hdXRoLlBhaXJpbmfKAhhHbHVvblxDdXN0b21hdXRoXFBhaXJpbmfiAiRHbHVvblxDdXN0b21hdXRoXFBhaXJpbmdcR1BCTWV0YWRhdGHqAhpHbHVvbjo6Q3VzdG9tYXV0aDo6UGFpcmluZ2IGcHJvdG8z");
+  fileDesc("CiVnbHVvbi9jdXN0b21hdXRoL3BhaXJpbmcvcHVia2V5LnByb3RvEhhnbHVvbi5jdXN0b21hdXRoLnBhaXJpbmciLQoGUHViS2V5EgwKBHVzZXIYASABKAwSFQoNcGFpcmluZ19pbmRleBgCIAEoCULPAQocY29tLmdsdW9uLmN1c3RvbWF1dGgucGFpcmluZ0ILUHVia2V5UHJvdG9QAVogZ2x1b24veC9jdXN0b21hdXRoL3R5cGVzL3BhaXJpbmeiAgNHQ1CqAhhHbHVvbi5DdXN0b21hdXRoLlBhaXJpbmfKAhhHbHVvblxDdXN0b21hdXRoXFBhaXJpbmfiAiRHbHVvblxDdXN0b21hdXRoXFBhaXJpbmdcR1BCTWV0YWRhdGHqAhpHbHVvbjo6Q3VzdG9tYXV0aDo6UGFpcmluZ2IGcHJvdG8z");
 
 /**
  * Pairing PubKey
@@ -27,9 +27,9 @@ export type PubKey = Message<"gluon.customauth.pairing.PubKey"> & {
   user: Uint8Array;
 
   /**
-   * @generated from field: uint64 pairing_id = 2;
+   * @generated from field: string pairing_index = 2;
    */
-  pairingId: bigint;
+  pairingIndex: string;
 };
 
 /**

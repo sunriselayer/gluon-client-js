@@ -14,7 +14,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/order/order.proto.
  */
 export const file_gluon_order_order: GenFile = /*@__PURE__*/
-  fileDesc("ChdnbHVvbi9vcmRlci9vcmRlci5wcm90bxILZ2x1b24ub3JkZXIiwwEKBU9yZGVyEgwKBGhhc2gYASABKAkSJwoFb3duZXIYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIoCgRib2R5GAMgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIEyN4fABIRCgljYW5jZWxsZWQYBCABKAgSRgoRY29udHJhY3RlZF9hbW91bnQYBSABKAlCK8jeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnRCfwoPY29tLmdsdW9uLm9yZGVyQgpPcmRlclByb3RvUAFaE2dsdW9uL3gvb3JkZXIvdHlwZXOiAgNHT1iqAgtHbHVvbi5PcmRlcsoCC0dsdW9uXE9yZGVy4gIXR2x1b25cT3JkZXJcR1BCTWV0YWRhdGHqAgxHbHVvbjo6T3JkZXJiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_any]);
+  fileDesc("ChdnbHVvbi9vcmRlci9vcmRlci5wcm90bxILZ2x1b24ub3JkZXIiwwEKBU9yZGVyEicKBW93bmVyGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSDAoEaGFzaBgCIAEoCRIoCgRib2R5GAMgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIEyN4fABIRCgljYW5jZWxsZWQYBCABKAgSRgoRY29udHJhY3RlZF9hbW91bnQYBSABKAlCK8jeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnRCfwoPY29tLmdsdW9uLm9yZGVyQgpPcmRlclByb3RvUAFaE2dsdW9uL3gvb3JkZXIvdHlwZXOiAgNHT1iqAgtHbHVvbi5PcmRlcsoCC0dsdW9uXE9yZGVy4gIXR2x1b25cT3JkZXJcR1BCTWV0YWRhdGHqAgxHbHVvbjo6T3JkZXJiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_any]);
 
 /**
  * Order
@@ -23,16 +23,16 @@ export const file_gluon_order_order: GenFile = /*@__PURE__*/
  */
 export type Order = Message<"gluon.order.Order"> & {
   /**
-   * To allow client to know the index of Order before MsgLazyRegister completion, hash is used.
-   *
-   * @generated from field: string hash = 1;
-   */
-  hash: string;
-
-  /**
-   * @generated from field: string owner = 2;
+   * @generated from field: string owner = 1;
    */
   owner: string;
+
+  /**
+   * To allow client to know the index of Order before MsgLazyRegister completion, hash is used.
+   *
+   * @generated from field: string hash = 2;
+   */
+  hash: string;
 
   /**
    * @generated from field: google.protobuf.Any body = 3;

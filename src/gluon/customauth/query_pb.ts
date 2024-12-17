@@ -18,7 +18,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/customauth/query.proto.
  */
 export const file_gluon_customauth_query: GenFile = /*@__PURE__*/
-  fileDesc("ChxnbHVvbi9jdXN0b21hdXRoL3F1ZXJ5LnByb3RvEhBnbHVvbi5jdXN0b21hdXRoIhQKElF1ZXJ5UGFyYW1zUmVxdWVzdCJFChNRdWVyeVBhcmFtc1Jlc3BvbnNlEi4KBnBhcmFtcxgBIAEoCzIYLmdsdW9uLmN1c3RvbWF1dGguUGFyYW1zQgTI3h8AIjUKFlF1ZXJ5R2V0UGFpcmluZ1JlcXVlc3QSDwoHYWRkcmVzcxgBIAEoCRIKCgJpZBgCIAEoBCJLChdRdWVyeUdldFBhaXJpbmdSZXNwb25zZRIwCgdwYWlyaW5nGAEgASgLMhkuZ2x1b24uY3VzdG9tYXV0aC5QYWlyaW5nQgTI3h8AImMKFFF1ZXJ5UGFpcmluZ3NSZXF1ZXN0Eg8KB2FkZHJlc3MYASABKAkSOgoKcGFnaW5hdGlvbhgCIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVlc3QihwEKFVF1ZXJ5UGFpcmluZ3NSZXNwb25zZRIxCghwYWlyaW5ncxgBIAMoCzIZLmdsdW9uLmN1c3RvbWF1dGguUGFpcmluZ0IEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UyoAMKBVF1ZXJ5EncKBlBhcmFtcxIkLmdsdW9uLmN1c3RvbWF1dGguUXVlcnlQYXJhbXNSZXF1ZXN0GiUuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhcmFtc1Jlc3BvbnNlIiCC0+STAhoSGC9nbHVvbi9jdXN0b21hdXRoL3BhcmFtcxKRAQoHUGFpcmluZxIoLmdsdW9uLmN1c3RvbWF1dGguUXVlcnlHZXRQYWlyaW5nUmVxdWVzdBopLmdsdW9uLmN1c3RvbWF1dGguUXVlcnlHZXRQYWlyaW5nUmVzcG9uc2UiMYLT5JMCKxIpL2dsdW9uL2N1c3RvbWF1dGgvcGFpcmluZ3Mve2FkZHJlc3N9L3tpZH0SiQEKCFBhaXJpbmdzEiYuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhaXJpbmdzUmVxdWVzdBonLmdsdW9uLmN1c3RvbWF1dGguUXVlcnlQYWlyaW5nc1Jlc3BvbnNlIiyC0+STAiYSJC9nbHVvbi9jdXN0b21hdXRoL3BhaXJpbmdzL3thZGRyZXNzfUKdAQoUY29tLmdsdW9uLmN1c3RvbWF1dGhCClF1ZXJ5UHJvdG9QAVoYZ2x1b24veC9jdXN0b21hdXRoL3R5cGVzogIDR0NYqgIQR2x1b24uQ3VzdG9tYXV0aMoCEEdsdW9uXEN1c3RvbWF1dGjiAhxHbHVvblxDdXN0b21hdXRoXEdQQk1ldGFkYXRh6gIRR2x1b246OkN1c3RvbWF1dGhiBnByb3RvMw", [file_cosmos_base_query_v1beta1_pagination, file_gluon_customauth_pairing, file_gluon_customauth_params, file_gogoproto_gogo, file_google_api_annotations]);
+  fileDesc("ChxnbHVvbi9jdXN0b21hdXRoL3F1ZXJ5LnByb3RvEhBnbHVvbi5jdXN0b21hdXRoIhQKElF1ZXJ5UGFyYW1zUmVxdWVzdCJFChNRdWVyeVBhcmFtc1Jlc3BvbnNlEi4KBnBhcmFtcxgBIAEoCzIYLmdsdW9uLmN1c3RvbWF1dGguUGFyYW1zQgTI3h8AIjMKE1F1ZXJ5UGFpcmluZ1JlcXVlc3QSDQoFb3duZXIYASABKAkSDQoFaW5kZXgYAiABKAkiSAoUUXVlcnlQYWlyaW5nUmVzcG9uc2USMAoHcGFpcmluZxgBIAEoCzIZLmdsdW9uLmN1c3RvbWF1dGguUGFpcmluZ0IEyN4fACJhChRRdWVyeVBhaXJpbmdzUmVxdWVzdBINCgVvd25lchgBIAEoCRI6CgpwYWdpbmF0aW9uGAIgASgLMiYuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVxdWVzdCKHAQoVUXVlcnlQYWlyaW5nc1Jlc3BvbnNlEjEKCHBhaXJpbmdzGAEgAygLMhkuZ2x1b24uY3VzdG9tYXV0aC5QYWlyaW5nQgTI3h8AEjsKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZTKZAwoFUXVlcnkSdwoGUGFyYW1zEiQuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhcmFtc1JlcXVlc3QaJS5nbHVvbi5jdXN0b21hdXRoLlF1ZXJ5UGFyYW1zUmVzcG9uc2UiIILT5JMCGhIYL2dsdW9uL2N1c3RvbWF1dGgvcGFyYW1zEowBCgdQYWlyaW5nEiUuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhaXJpbmdSZXF1ZXN0GiYuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhaXJpbmdSZXNwb25zZSIygtPkkwIsEiovZ2x1b24vY3VzdG9tYXV0aC9wYWlyaW5ncy97b3duZXJ9L3tpbmRleH0ShwEKCFBhaXJpbmdzEiYuZ2x1b24uY3VzdG9tYXV0aC5RdWVyeVBhaXJpbmdzUmVxdWVzdBonLmdsdW9uLmN1c3RvbWF1dGguUXVlcnlQYWlyaW5nc1Jlc3BvbnNlIiqC0+STAiQSIi9nbHVvbi9jdXN0b21hdXRoL3BhaXJpbmdzL3tvd25lcn1CnQEKFGNvbS5nbHVvbi5jdXN0b21hdXRoQgpRdWVyeVByb3RvUAFaGGdsdW9uL3gvY3VzdG9tYXV0aC90eXBlc6ICA0dDWKoCEEdsdW9uLkN1c3RvbWF1dGjKAhBHbHVvblxDdXN0b21hdXRo4gIcR2x1b25cQ3VzdG9tYXV0aFxHUEJNZXRhZGF0YeoCEUdsdW9uOjpDdXN0b21hdXRoYgZwcm90bzM", [file_cosmos_base_query_v1beta1_pagination, file_gluon_customauth_pairing, file_gluon_customauth_params, file_gogoproto_gogo, file_google_api_annotations]);
 
 /**
  * QueryParamsRequest is request type for the Query/Params RPC method.
@@ -57,35 +57,35 @@ export const QueryParamsResponseSchema: GenMessage<QueryParamsResponse> = /*@__P
   messageDesc(file_gluon_customauth_query, 1);
 
 /**
- * QueryGetPairingRequest
+ * QueryPairingRequest
  *
- * @generated from message gluon.customauth.QueryGetPairingRequest
+ * @generated from message gluon.customauth.QueryPairingRequest
  */
-export type QueryGetPairingRequest = Message<"gluon.customauth.QueryGetPairingRequest"> & {
+export type QueryPairingRequest = Message<"gluon.customauth.QueryPairingRequest"> & {
   /**
-   * @generated from field: string address = 1;
+   * @generated from field: string owner = 1;
    */
-  address: string;
+  owner: string;
 
   /**
-   * @generated from field: uint64 id = 2;
+   * @generated from field: string index = 2;
    */
-  id: bigint;
+  index: string;
 };
 
 /**
- * Describes the message gluon.customauth.QueryGetPairingRequest.
- * Use `create(QueryGetPairingRequestSchema)` to create a new message.
+ * Describes the message gluon.customauth.QueryPairingRequest.
+ * Use `create(QueryPairingRequestSchema)` to create a new message.
  */
-export const QueryGetPairingRequestSchema: GenMessage<QueryGetPairingRequest> = /*@__PURE__*/
+export const QueryPairingRequestSchema: GenMessage<QueryPairingRequest> = /*@__PURE__*/
   messageDesc(file_gluon_customauth_query, 2);
 
 /**
- * QueryGetPairingResponse
+ * QueryPairingResponse
  *
- * @generated from message gluon.customauth.QueryGetPairingResponse
+ * @generated from message gluon.customauth.QueryPairingResponse
  */
-export type QueryGetPairingResponse = Message<"gluon.customauth.QueryGetPairingResponse"> & {
+export type QueryPairingResponse = Message<"gluon.customauth.QueryPairingResponse"> & {
   /**
    * @generated from field: gluon.customauth.Pairing pairing = 1;
    */
@@ -93,10 +93,10 @@ export type QueryGetPairingResponse = Message<"gluon.customauth.QueryGetPairingR
 };
 
 /**
- * Describes the message gluon.customauth.QueryGetPairingResponse.
- * Use `create(QueryGetPairingResponseSchema)` to create a new message.
+ * Describes the message gluon.customauth.QueryPairingResponse.
+ * Use `create(QueryPairingResponseSchema)` to create a new message.
  */
-export const QueryGetPairingResponseSchema: GenMessage<QueryGetPairingResponse> = /*@__PURE__*/
+export const QueryPairingResponseSchema: GenMessage<QueryPairingResponse> = /*@__PURE__*/
   messageDesc(file_gluon_customauth_query, 3);
 
 /**
@@ -106,9 +106,9 @@ export const QueryGetPairingResponseSchema: GenMessage<QueryGetPairingResponse> 
  */
 export type QueryPairingsRequest = Message<"gluon.customauth.QueryPairingsRequest"> & {
   /**
-   * @generated from field: string address = 1;
+   * @generated from field: string owner = 1;
    */
-  address: string;
+  owner: string;
 
   /**
    * @generated from field: cosmos.base.query.v1beta1.PageRequest pagination = 2;
@@ -170,8 +170,8 @@ export const Query: GenService<{
    */
   pairing: {
     methodKind: "unary";
-    input: typeof QueryGetPairingRequestSchema;
-    output: typeof QueryGetPairingResponseSchema;
+    input: typeof QueryPairingRequestSchema;
+    output: typeof QueryPairingResponseSchema;
   },
   /**
    * Pairings
