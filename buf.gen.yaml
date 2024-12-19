@@ -33,3 +33,4 @@ inputs:
     subdir: proto
     paths:
       - cosmos/tx/v1beta1/tx.proto
+      - cosmos/crypto/secp256k1/keys.proto
