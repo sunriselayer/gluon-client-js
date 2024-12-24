@@ -11,7 +11,8 @@
     "./customauth": "./dist/gluon/customauth/index.js",
     "./order": "./dist/gluon/order/index.js",
     "./perp": "./dist/gluon/perp/index.js",
-    "./spot": "./dist/gluon/spot/index.js"
+    "./spot": "./dist/gluon/spot/index.js",
+    "./bank": "./dist/cosmos/bank/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
