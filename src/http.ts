@@ -1,5 +1,6 @@
 import { Axios } from "axios";
 import { Order } from "./api-types";
+import { Buffer } from "buffer";
 
 export class HttpClient {
   private axios: Axios;
@@ -11,14 +12,17 @@ export class HttpClient {
   }
 
   async createOrder(
-    orderBinary: string,
+    orderBinary: Uint8Array,
     pairingId: number,
-    signature: string
+    signature: Uint8Array
   ): Promise<void> {
+    const orderBinaryBase64 = Buffer.from(orderBinary).toString("base64");
+    const signatureBase64 = Buffer.from(signature).toString("base64");
+
     await this.axios.post("/orders", {
-      order_binary: orderBinary,
+      order_binary: orderBinaryBase64,
       pairing_id: pairingId,
-      signature: signature,
+      signature: signatureBase64,
     });
   }
 
