@@ -1,6 +1,6 @@
 {
-  "name": "@sunriselayer/gluon-types",
-  "version": "0.1.10",
+  "name": "@sunriselayer/gluon-client",
+  "version": "0.1.0",
   "publishConfig": {
     "access": "public"
   },
