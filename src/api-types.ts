@@ -1,7 +1,7 @@
 import { AnyJson, TimestampJson } from "@bufbuild/protobuf/wkt";
 
 export type WebSocketRequest = {
-  new_order: {
+  create_order: {
     order_binary: string; // base64 encoded
     pairing_id: number;
     signature: string; // base64 encoded
@@ -17,6 +17,11 @@ export type WebSocketResponse =
     }
   | {
       new_contract: Contract;
+    }
+  | {
+      order_cancelled: {
+        order_hash: string;
+      };
     };
 
 export type Order = {

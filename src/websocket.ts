@@ -13,7 +13,8 @@ export class WebSocketClient {
     baseUrl: string,
     onOrdersSnapshot: (orders: Order[]) => Promise<void>,
     onNewOrder: (order: Order) => Promise<void>,
-    onNewContract: (contract: Contract) => Promise<void>
+    onNewContract: (contract: Contract) => Promise<void>,
+    onOrderCancelled: (orderHash: string) => Promise<void>
   ) {
     this.socket = io(`${baseUrl}/ws`);
 
@@ -28,6 +29,8 @@ export class WebSocketClient {
         await onNewOrder(data.new_order);
       } else if ("new_contract" in data) {
         await onNewContract(data.new_contract);
+      } else if ("order_cancelled" in data) {
+        await onOrderCancelled(data.order_cancelled.order_hash);
       }
     });
 
@@ -45,7 +48,7 @@ export class WebSocketClient {
     const signatureBase64 = Buffer.from(signature).toString("base64");
 
     const req: WebSocketRequest = {
-      new_order: {
+      create_order: {
         order_binary: orderBinaryBase64,
         pairing_id: pairingId,
         signature: signatureBase64,

@@ -11,6 +11,11 @@ export class HttpClient {
     });
   }
 
+  async getOrders(): Promise<Order[]> {
+    const response = await this.axios.get("/orders");
+    return response.data;
+  }
+
   async createOrder(
     orderBinary: Uint8Array,
     pairingId: number,
@@ -24,10 +29,5 @@ export class HttpClient {
       pairing_id: pairingId,
       signature: signatureBase64,
     });
-  }
-
-  async getOrders(): Promise<Order[]> {
-    const response = await this.axios.get("/orders");
-    return response.data;
   }
 }
