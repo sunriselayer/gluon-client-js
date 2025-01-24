@@ -28,6 +28,7 @@ import {
 import { Any, AnySchema } from "@bufbuild/protobuf/wkt";
 import { GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { CoinSchema } from "../../cosmos/base/v1beta1/coin_pb";
+import { MultiSignatureSchema } from "../../cosmos/crypto/multisig/v1beta1/multisig_pb";
 
 export function packAny<T extends Message>(
   schema: GenMessage<T>,
@@ -122,6 +123,15 @@ export function getTxSignMessageDirect(
       authInfoBytes: toBinary(AuthInfoSchema, authInfo),
       chainId,
       accountNumber,
+    })
+  );
+}
+
+export function createMultiSignature(signatures: Uint8Array[]): Uint8Array {
+  return toBinary(
+    MultiSignatureSchema,
+    create(MultiSignatureSchema, {
+      signatures,
     })
   );
 }

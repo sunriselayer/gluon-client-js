@@ -1,6 +1,6 @@
 {
   "name": "@sunriselayer/gluon-types",
-  "version": "0.1.3",
+  "version": "0.1.10",
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +12,8 @@
     "./types/customauth": "./dist/types/gluon/customauth/index.js",
     "./types/order": "./dist/types/gluon/order/index.js",
     "./types/perp": "./dist/types/gluon/perp/index.js",
-    "./types/spot": "./dist/types/gluon/spot/index.js"
+    "./types/spot": "./dist/types/gluon/spot/index.js",
+    "./types/bank": "./dist/types/cosmos/bank/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
