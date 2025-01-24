@@ -8,6 +8,7 @@
     "dist"
   ],
   "exports": {
+    ".": "./dist/index.js",
     "./types/customauth": "./dist/types/gluon/customauth/index.js",
     "./types/order": "./dist/types/gluon/order/index.js",
     "./types/perp": "./dist/types/gluon/perp/index.js",
