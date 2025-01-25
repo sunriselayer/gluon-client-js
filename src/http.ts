@@ -1,5 +1,5 @@
 import { Axios } from "axios";
-import { Order } from "./api-types";
+import { PendingOrder } from "./api-types";
 import { Buffer } from "buffer";
 
 export class HttpClient {
@@ -11,7 +11,7 @@ export class HttpClient {
     });
   }
 
-  async getOrders(): Promise<Order[]> {
+  async getOrders(): Promise<PendingOrder[]> {
     const response = await this.axios.get("/orders");
     return response.data;
   }

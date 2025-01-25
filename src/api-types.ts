@@ -10,7 +10,7 @@ export type WebSocketRequest = {
 
 export type WebSocketResponse =
   | {
-      orders_snapshot: Order[];
+      orders_snapshot: PendingOrder[];
     }
   | {
       new_order: Order;
@@ -23,6 +23,14 @@ export type WebSocketResponse =
         order_hash: string;
       };
     };
+
+export type PendingOrder = {
+  order_hash: string;
+  direction: number;
+  amount: string;
+  limit_price: string;
+  expiry: string;
+};
 
 export type Order = {
   hash: string;

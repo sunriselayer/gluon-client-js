@@ -2,6 +2,7 @@ import { io, type Socket } from "socket.io-client";
 import {
   Contract,
   Order,
+  PendingOrder,
   WebSocketRequest,
   WebSocketResponse,
 } from "./api-types";
@@ -11,16 +12,17 @@ export class WebSocketClient {
 
   constructor(
     baseUrl: string,
-    onOrdersSnapshot: (orders: Order[]) => Promise<void>,
+    onConnect: () => Promise<void>,
+    onDisconnect: () => Promise<void>,
+    onOrdersSnapshot: (orders: PendingOrder[]) => Promise<void>,
     onNewOrder: (order: Order) => Promise<void>,
     onNewContract: (contract: Contract) => Promise<void>,
     onOrderCancelled: (orderHash: string) => Promise<void>
   ) {
     this.socket = io(`${baseUrl}/ws`);
 
-    this.socket.on("connect", () => {
-      console.log("Connected to websocket server");
-    });
+    this.socket.on("connect", onConnect);
+    this.socket.on("disconnect", onDisconnect);
 
     this.socket.on("message", async (data: WebSocketResponse) => {
       if ("orders_snapshot" in data) {
@@ -32,10 +34,6 @@ export class WebSocketClient {
       } else if ("order_cancelled" in data) {
         await onOrderCancelled(data.order_cancelled.order_hash);
       }
-    });
-
-    this.socket.on("disconnect", () => {
-      console.log("Disconnected from websocket server");
     });
   }
 
