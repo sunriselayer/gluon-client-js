@@ -1,12 +1,4 @@
-import { AnyJson, TimestampJson } from "@bufbuild/protobuf/wkt";
-
-export type WebSocketRequest = {
-  create_order: {
-    order_binary: string; // base64 encoded
-    pairing_id: number;
-    signature: string; // base64 encoded
-  };
-};
+import { TimestampJson } from "@bufbuild/protobuf/wkt";
 
 export type WebSocketResponse =
   | {
@@ -34,10 +26,16 @@ export type PendingOrder = {
 
 export type Order = {
   hash: string;
-  owner: string;
-  body: AnyJson;
-  cancelled: boolean;
-  contracted_amount: string;
+  body: {
+    address: string;
+    nonce: number;
+    denom_base: string;
+    denom_quote: string;
+    direction: number;
+    amount: string;
+    limit_price: string;
+    expiry: TimestampJson;
+  };
 };
 
 export type Contract = {
