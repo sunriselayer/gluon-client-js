@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "@bufbuild/protobuf": "^2.2.2",
-    "axios": "^1.7.9",
-    "socket.io-client": "^4.8.1"
+    "axios": "^1.7.9"
   }
 }
