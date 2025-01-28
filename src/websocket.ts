@@ -1,4 +1,4 @@
-import { Contract, Order, PendingOrder, WebSocketResponse } from "./api-types";
+import { Contract, Order, WebSocketResponse } from "./api-types";
 
 export class WebSocketClient {
   private socket: WebSocket;
@@ -7,7 +7,7 @@ export class WebSocketClient {
     baseUrl: string,
     onOpen: (ev: Event) => Promise<void>,
     onClose: (ev: CloseEvent) => Promise<void>,
-    onOrdersSnapshot: (orders: PendingOrder[]) => Promise<void>,
+    onOrdersSnapshot: (orders: Order[]) => Promise<void>,
     onNewOrder: (order: Order) => Promise<void>,
     onNewContract: (contract: Contract) => Promise<void>,
     onOrderCancelled: (orderHash: string) => Promise<void>

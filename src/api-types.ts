@@ -2,7 +2,7 @@ import { TimestampJson } from "@bufbuild/protobuf/wkt";
 
 export type WebSocketResponse =
   | {
-      ordersSnapshot: { orders: PendingOrder[] };
+      ordersSnapshot: { orders: Order[] };
     }
   | {
       newOrder: { order: Order };
@@ -22,14 +22,6 @@ export enum OrderDirection {
   SELL = "ORDER_DIRECTION_SELL",
 }
 
-export type PendingOrder = {
-  orderHash: string;
-  direction: OrderDirection;
-  amount: string;
-  limitPrice: string;
-  expiry: string;
-};
-
 export type Order = {
   hash: string;
   address: string;
@@ -40,8 +32,8 @@ export type Order = {
 };
 
 export type Contract = {
-  buyerOrderHash: string;
-  sellerOrderHash: string;
+  orderHashBuyer: string;
+  orderHashSeller: string;
   price: string;
   quantity: string;
   timestamp: TimestampJson;
