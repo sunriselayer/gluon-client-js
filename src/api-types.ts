@@ -2,45 +2,46 @@ import { TimestampJson } from "@bufbuild/protobuf/wkt";
 
 export type WebSocketResponse =
   | {
-      orders_snapshot: PendingOrder[];
+      ordersSnapshot: { orders: PendingOrder[] };
     }
   | {
-      new_order: Order;
+      newOrder: { order: Order };
     }
   | {
-      new_contract: Contract;
+      newContract: { contract: Contract };
     }
   | {
-      order_cancelled: {
-        order_hash: string;
+      orderCancelled: {
+        orderHash: string;
       };
     };
 
+export enum OrderDirection {
+  UNSPECIFIED = "ORDER_DIRECTION_UNSPECIFIED",
+  BUY = "ORDER_DIRECTION_BUY",
+  SELL = "ORDER_DIRECTION_SELL",
+}
+
 export type PendingOrder = {
-  order_hash: string;
-  direction: number;
+  orderHash: string;
+  direction: OrderDirection;
   amount: string;
-  limit_price: string;
+  limitPrice: string;
   expiry: string;
 };
 
 export type Order = {
   hash: string;
-  body: {
-    address: string;
-    nonce: number;
-    denom_base: string;
-    denom_quote: string;
-    direction: number;
-    amount: string;
-    limit_price: string;
-    expiry: TimestampJson;
-  };
+  address: string;
+  direction: OrderDirection;
+  amount: string;
+  limitPrice: string;
+  expiry: TimestampJson;
 };
 
 export type Contract = {
-  buyer_order_hash: string;
-  seller_order_hash: string;
+  buyerOrderHash: string;
+  sellerOrderHash: string;
   price: string;
   quantity: string;
   timestamp: TimestampJson;

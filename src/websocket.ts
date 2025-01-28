@@ -19,14 +19,14 @@ export class WebSocketClient {
 
     this.socket.onmessage = (event: MessageEvent) => {
       const data = JSON.parse(event.data) as WebSocketResponse;
-      if ("orders_snapshot" in data) {
-        onOrdersSnapshot(data.orders_snapshot);
-      } else if ("new_order" in data) {
-        onNewOrder(data.new_order);
-      } else if ("new_contract" in data) {
-        onNewContract(data.new_contract);
-      } else if ("order_cancelled" in data) {
-        onOrderCancelled(data.order_cancelled.order_hash);
+      if ("ordersSnapshot" in data) {
+        onOrdersSnapshot(data.ordersSnapshot.orders);
+      } else if ("newOrder" in data) {
+        onNewOrder(data.newOrder.order);
+      } else if ("newContract" in data) {
+        onNewContract(data.newContract.contract);
+      } else if ("orderCancelled" in data) {
+        onOrderCancelled(data.orderCancelled.orderHash);
       }
     };
   }
