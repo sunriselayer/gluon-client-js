@@ -5,7 +5,7 @@ managed:
 plugins:
   - local: protoc-gen-es
     opt: target=ts
-    out: src
+    out: src/types
     include_imports: true
 
 inputs:

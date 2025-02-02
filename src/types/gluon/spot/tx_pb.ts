@@ -15,7 +15,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/spot/tx.proto.
  */
 export const file_gluon_spot_tx: GenFile = /*@__PURE__*/
-  fileDesc("ChNnbHVvbi9zcG90L3R4LnByb3RvEgpnbHVvbi5zcG90IngKD01zZ1VwZGF0ZVBhcmFtcxIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIoCgZwYXJhbXMYAiABKAsyEi5nbHVvbi5zcG90LlBhcmFtc0IEyN4fADoOguewKglhdXRob3JpdHkiGQoXTXNnVXBkYXRlUGFyYW1zUmVzcG9uc2Ui/AEKDU1zZ01hdGNoT3JkZXISJwoFYnV5ZXIYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIYChBidXllcl9vcmRlcl9oYXNoGAIgASgJEigKBnNlbGxlchgDIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEhkKEXNlbGxlcl9vcmRlcl9oYXNoGAQgASgJEg0KBXByaWNlGAUgASgJEj0KCHF1YW50aXR5GAYgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50OhWC57AqBWJ1eWVyguewKgZzZWxsZXIiFwoVTXNnTWF0Y2hPcmRlclJlc3BvbnNlMqoBCgNNc2cSUAoMVXBkYXRlUGFyYW1zEhsuZ2x1b24uc3BvdC5Nc2dVcGRhdGVQYXJhbXMaIy5nbHVvbi5zcG90Lk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlEkoKCk1hdGNoT3JkZXISGS5nbHVvbi5zcG90Lk1zZ01hdGNoT3JkZXIaIS5nbHVvbi5zcG90Lk1zZ01hdGNoT3JkZXJSZXNwb25zZRoFgOewKgFCdgoOY29tLmdsdW9uLnNwb3RCB1R4UHJvdG9QAVoSZ2x1b24veC9zcG90L3R5cGVzogIDR1NYqgIKR2x1b24uU3BvdMoCCkdsdW9uXFNwb3TiAhZHbHVvblxTcG90XEdQQk1ldGFkYXRh6gILR2x1b246OlNwb3RiBnByb3RvMw", [file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gluon_spot_params, file_gogoproto_gogo]);
+  fileDesc("ChNnbHVvbi9zcG90L3R4LnByb3RvEgpnbHVvbi5zcG90IngKD01zZ1VwZGF0ZVBhcmFtcxIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIoCgZwYXJhbXMYAiABKAsyEi5nbHVvbi5zcG90LlBhcmFtc0IEyN4fADoOguewKglhdXRob3JpdHkiGQoXTXNnVXBkYXRlUGFyYW1zUmVzcG9uc2Ui/AEKDU1zZ01hdGNoT3JkZXISJwoFYnV5ZXIYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIoCgZzZWxsZXIYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIYChBvcmRlcl9oYXNoX2J1eWVyGAMgASgJEhkKEW9yZGVyX2hhc2hfc2VsbGVyGAQgASgJEg0KBXByaWNlGAUgASgJEj0KCHF1YW50aXR5GAYgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50OhWC57AqBWJ1eWVyguewKgZzZWxsZXIiFwoVTXNnTWF0Y2hPcmRlclJlc3BvbnNlMqoBCgNNc2cSUAoMVXBkYXRlUGFyYW1zEhsuZ2x1b24uc3BvdC5Nc2dVcGRhdGVQYXJhbXMaIy5nbHVvbi5zcG90Lk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlEkoKCk1hdGNoT3JkZXISGS5nbHVvbi5zcG90Lk1zZ01hdGNoT3JkZXIaIS5nbHVvbi5zcG90Lk1zZ01hdGNoT3JkZXJSZXNwb25zZRoFgOewKgFCdgoOY29tLmdsdW9uLnNwb3RCB1R4UHJvdG9QAVoSZ2x1b24veC9zcG90L3R5cGVzogIDR1NYqgIKR2x1b24uU3BvdMoCCkdsdW9uXFNwb3TiAhZHbHVvblxTcG90XEdQQk1ldGFkYXRh6gILR2x1b246OlNwb3RiBnByb3RvMw", [file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gluon_spot_params, file_gogoproto_gogo]);
 
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
@@ -73,19 +73,19 @@ export type MsgMatchOrder = Message<"gluon.spot.MsgMatchOrder"> & {
   buyer: string;
 
   /**
-   * @generated from field: string buyer_order_hash = 2;
-   */
-  buyerOrderHash: string;
-
-  /**
-   * @generated from field: string seller = 3;
+   * @generated from field: string seller = 2;
    */
   seller: string;
 
   /**
-   * @generated from field: string seller_order_hash = 4;
+   * @generated from field: string order_hash_buyer = 3;
    */
-  sellerOrderHash: string;
+  orderHashBuyer: string;
+
+  /**
+   * @generated from field: string order_hash_seller = 4;
+   */
+  orderHashSeller: string;
 
   /**
    * @generated from field: string price = 5;
