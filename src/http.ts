@@ -1,6 +1,7 @@
 import { Axios } from "axios";
 import { Order } from "./api-types";
 import { Buffer } from "buffer";
+import { AnyJson } from "@bufbuild/protobuf/wkt";
 
 export class HttpClient {
   private axios: Axios;
@@ -11,23 +12,28 @@ export class HttpClient {
     });
   }
 
-  async getOrders(): Promise<Order[]> {
-    const response = await this.axios.get("/orders");
+  async getOrderbook(): Promise<Order[]> {
+    const response = await this.axios.get("/orderbook");
     return response.data;
   }
 
   async createOrder(
-    orderBinary: Uint8Array,
-    pairingId: number,
+    order: AnyJson,
+    pairingIndex: string,
     signature: Uint8Array
   ): Promise<void> {
-    const orderBinaryBase64 = Buffer.from(orderBinary).toString("base64");
     const signatureBase64 = Buffer.from(signature).toString("base64");
 
     await this.axios.post("/orders", {
-      order_binary: orderBinaryBase64,
-      pairing_id: pairingId,
+      order,
+      pairingIndex,
       signature: signatureBase64,
+    });
+  }
+
+  async cancelOrder(orderHash: string): Promise<void> {
+    await this.axios.post("/cancel-order", {
+      orderHash,
     });
   }
 }
