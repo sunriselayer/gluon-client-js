@@ -14,7 +14,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file gluon/order/base_order.proto.
  */
 export const file_gluon_order_base_order: GenFile = /*@__PURE__*/
-  fileDesc("ChxnbHVvbi9vcmRlci9iYXNlX29yZGVyLnByb3RvEgtnbHVvbi5vcmRlciLNAgoJQmFzZU9yZGVyEjoKB2FkZHJlc3MYASABKAlCKeLeHw1BZGRyZXNzU3RyaW5n0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEg0KBW5vbmNlGAIgASgEEhIKCmRlbm9tX2Jhc2UYAyABKAkSEwoLZGVub21fcXVvdGUYBCABKAkSLgoJZGlyZWN0aW9uGAUgASgOMhsuZ2x1b24ub3JkZXIuT3JkZXJEaXJlY3Rpb24SOwoGYW1vdW50GAYgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EikKC2xpbWl0X3ByaWNlGAcgASgJQhTi3h8QTGltaXRQcmljZVN0cmluZxI0CgZleHBpcnkYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgjI3h8AkN8fASpkCg5PcmRlckRpcmVjdGlvbhIfChtPUkRFUl9ESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIXChNPUkRFUl9ESVJFQ1RJT05fQlVZEAESGAoUT1JERVJfRElSRUNUSU9OX1NFTEwQAkKDAQoPY29tLmdsdW9uLm9yZGVyQg5CYXNlT3JkZXJQcm90b1ABWhNnbHVvbi94L29yZGVyL3R5cGVzogIDR09YqgILR2x1b24uT3JkZXLKAgtHbHVvblxPcmRlcuICF0dsdW9uXE9yZGVyXEdQQk1ldGFkYXRh6gIMR2x1b246Ok9yZGVyYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_timestamp]);
+  fileDesc("ChxnbHVvbi9vcmRlci9iYXNlX29yZGVyLnByb3RvEgtnbHVvbi5vcmRlciK+AgoJQmFzZU9yZGVyEjoKB2FkZHJlc3MYASABKAlCKeLeHw1BZGRyZXNzU3RyaW5n0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEhIKCmRlbm9tX2Jhc2UYAiABKAkSEwoLZGVub21fcXVvdGUYAyABKAkSLgoJZGlyZWN0aW9uGAQgASgOMhsuZ2x1b24ub3JkZXIuT3JkZXJEaXJlY3Rpb24SOwoGYW1vdW50GAUgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EikKC2xpbWl0X3ByaWNlGAYgASgJQhTi3h8QTGltaXRQcmljZVN0cmluZxI0CgZleHBpcnkYByABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgjI3h8AkN8fASpkCg5PcmRlckRpcmVjdGlvbhIfChtPUkRFUl9ESVJFQ1RJT05fVU5TUEVDSUZJRUQQABIXChNPUkRFUl9ESVJFQ1RJT05fQlVZEAESGAoUT1JERVJfRElSRUNUSU9OX1NFTEwQAkKDAQoPY29tLmdsdW9uLm9yZGVyQg5CYXNlT3JkZXJQcm90b1ABWhNnbHVvbi94L29yZGVyL3R5cGVzogIDR09YqgILR2x1b24uT3JkZXLKAgtHbHVvblxPcmRlcuICF0dsdW9uXE9yZGVyXEdQQk1ldGFkYXRh6gIMR2x1b246Ok9yZGVyYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_timestamp]);
 
 /**
  * BaseOrder
@@ -28,43 +28,36 @@ export type BaseOrder = Message<"gluon.order.BaseOrder"> & {
   address: string;
 
   /**
-   * For avoiding order hash conflict
-   *
-   * @generated from field: uint64 nonce = 2;
-   */
-  nonce: bigint;
-
-  /**
-   * @generated from field: string denom_base = 3;
+   * @generated from field: string denom_base = 2;
    */
   denomBase: string;
 
   /**
-   * @generated from field: string denom_quote = 4;
+   * @generated from field: string denom_quote = 3;
    */
   denomQuote: string;
 
   /**
-   * @generated from field: gluon.order.OrderDirection direction = 5;
+   * @generated from field: gluon.order.OrderDirection direction = 4;
    */
   direction: OrderDirection;
 
   /**
-   * @generated from field: string amount = 6;
+   * @generated from field: string amount = 5;
    */
   amount: string;
 
   /**
    * Empty means market order
    *
-   * @generated from field: string limit_price = 7;
+   * @generated from field: string limit_price = 6;
    */
   limitPrice: string;
 
   /**
    * Required to prevent operator from utilizing old order
    *
-   * @generated from field: google.protobuf.Timestamp expiry = 8;
+   * @generated from field: google.protobuf.Timestamp expiry = 7;
    */
   expiry?: Timestamp;
 };
